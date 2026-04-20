@@ -23,9 +23,14 @@ public class AtividadeMensagem {
        
         JOptionPane.showMessageDialog(null, "Bem vindo ao Doors ");
         
-        String nome = JOptionPane.showInputDialog("Informe seu nome: ");
-        JOptionPane.showMessageDialog(null, "Nome do usuário: "+nome);
+        String login = JOptionPane.showInputDialog("Informe o login: ");
+        String senha = JOptionPane.showInputDialog("Informe a senha: ");
         
-        
+        if(login.equals("Xavier Wall") && senha.equals("1313")){
+            JOptionPane.showMessageDialog(null, "Login realizado com sucesso!");
+        }else{
+            JOptionPane.showMessageDialog(null, "Login ou senha inválidos.");
+        }
+         
     }
 }
